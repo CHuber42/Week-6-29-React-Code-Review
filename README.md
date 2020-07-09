@@ -1,4 +1,43 @@
+## Project: **Week 15 - Friday Code Review - TapRoom Keg Tracker**
+#### Author: **Christopher Huber**
+## Goal: Demonstrate single-page, fully-CRUD "website" in React!
 
+### Github page: https://github.com/CHuber42/Week-6-29-Code-Review
+#### Github repo: You're standing on it.
+##### Copyright Christopher Huber, 2020
+
+<hr/>
+         
+##### Build instructions/Installation: 
+
+This project is built following the instructions at the bottom of the page.
+
+To install, simply clone (or download) this folder into a new directory, git bash to the root folder,
+and run npm install.  
+
+To run: Navigate to the root folder in a terminal and enter "npm start". The project will be hosted at   
+http://localhost:3000
+
+##### Extra Features (Vaccines/Vaccines List)
+
+MVP:  As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and alcoholContent (or perhaps something like flavor for a kombucha store).
+As a user, I want to submit a form to add a new keg to a list.
+As a user, I want to be able to click on a keg to see its detail page.
+As a user, I want to see how many pints are left in a keg. Hint: A full keg has roughly 124 pints.
+As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0.
+
+Extra Features/bugs:  
+1. By default, when a keg is decremented, it is re-appended to the list of kegs which moves it to the end. This causes havoc with the display.  
+To remedy this, the keg list now gets sorted based on a key assigned at Keg Object Creation; for some reason v4() doesn't work for this   
+as sorting by string is a bit funky, so I used a placeholder - length of keg array - as a "key". This can cause problems when a keg is removed from the list  
+(empty) and then another is added - a duplicate "key" is likely.
+
+
+##### _Contact_:
+
+CHuber42.Gmail.com
+
+##### _Copyright Christopher Huber 2020, all rights reserved._
 
 <hr/>
 
