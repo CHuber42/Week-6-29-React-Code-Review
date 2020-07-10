@@ -18,7 +18,7 @@ and run npm install.
 To run: Navigate to the root folder in a terminal and enter "npm start". The project will be hosted at   
 http://localhost:3000
 
-##### Extra Features (Vaccines/Vaccines List)
+##### Extra Features
 
 MVP:  As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and alcoholContent (or perhaps something like flavor for a kombucha store).
 As a user, I want to submit a form to add a new keg to a list.
